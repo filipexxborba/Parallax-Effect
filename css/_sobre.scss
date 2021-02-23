@@ -46,10 +46,21 @@
         }
         .crescer{
             background: transparent;
-            transform: rotate3D(0, 0, 0, 135deg);
         }
         .resultados{
             background: transparent;
+            h3{
+                text-align: center;
+                color: white;
+                text-transform: uppercase;
+                font-size: em(48);
+                position: relative;
+                top: rem(250);
+                text-shadow: rem(0) rem(0) rem(16) #444;
+                @include device(phone){
+                 font-size: em(32);       
+                }
+            }
         }
         .comunicacao{
             background: transparent;

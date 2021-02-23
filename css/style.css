@@ -263,12 +263,26 @@ body {
 
 .sobre__car .crescer {
   background: transparent;
-  -webkit-transform: rotate3D(0, 0, 0, 135deg);
-          transform: rotate3D(0, 0, 0, 135deg);
 }
 
 .sobre__car .resultados {
   background: transparent;
+}
+
+.sobre__car .resultados h3 {
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-size: 3em;
+  position: relative;
+  top: 15.625rem;
+  text-shadow: 0rem 0rem 1rem #444;
+}
+
+@media screen and (max-width: 759px) {
+  .sobre__car .resultados h3 {
+    font-size: 2em;
+  }
 }
 
 .sobre__car .comunicacao {
