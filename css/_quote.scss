@@ -1,0 +1,38 @@
+.quote{
+    margin-top: rem(-64);
+    padding: rem(32) rem(16);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        @include device(phone){
+         flex-direction: column;               
+        }
+        img{
+            border-radius: 50%;
+            @include device(phone){
+             margin-bottom: rem(16);           
+            }
+        }
+        &__text{
+            margin-left: rem(16);
+            @include device(phone){
+             margin-left: 0;  
+             text-align: center;         
+            }
+            h3{
+                font-size: em(36);
+                @include device(phone){
+                 margin-bottom: rem(16);       
+                }
+            }
+            p{
+                font-size: em(16);
+                max-width: 60ch;
+                color: rgba($color: $light-blue, $alpha: .8);
+            }
+        }
+    }
+}

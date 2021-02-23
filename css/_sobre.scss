@@ -1,0 +1,61 @@
+.sobre{
+    padding: rem(64) 0;
+    &__texto{
+        h2{
+            color: $dark-blue;
+            text-align: center;
+            margin-bottom: rem(16);
+
+            &::after{
+                content: '';
+                width: rem(120);
+                height: rem(3);
+                position: relative;
+                background-color: $dark-blue;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+        p{
+            line-height: 1.5em;
+        }
+        p+p{
+            margin-top: rem(8);
+        }
+    }
+    &__car{
+        margin-top: rem(64);
+
+        &__item{
+            
+            height: rem(600);
+            margin-top: rem(32);
+            transform: rotate3d(0, 0, 0, 60deg);
+            h3{
+                text-align: center;
+                color: white;
+                text-transform: uppercase;
+                font-size: em(48);
+                position: relative;
+                top: rem(250);
+                text-shadow: rem(0) rem(0) rem(16) #444;
+                @include device(phone){
+                 font-size: em(32);       
+                }
+            }
+        }
+        .crescer{
+            background: transparent;
+            transform: rotate3D(0, 0, 0, 135deg);
+        }
+        .resultados{
+            background: transparent;
+        }
+        .comunicacao{
+            background: transparent;
+        }
+        .sabedoria{
+            background: transparent;
+        }
+    }
+}
